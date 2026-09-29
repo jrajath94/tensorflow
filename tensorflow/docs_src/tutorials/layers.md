@@ -266,7 +266,7 @@ The `filters` argument specifies the number of filters to apply (here, 32), and
 <em>height</em>]</code> (here, <code>[5, 5]</code>).
 
 <p class="tip"><b>TIP:</b> If filter width and height have the same value, you can instead specify a
-single integer for <code>kernel_size</code>—e.g., <code>kernel_size=5</code>.</p>
+single integer for <code>kernel_size</code>-e.g., <code>kernel_size=5</code>.</p>
 
 The `padding` argument specifies one of two enumerated values
 (case-insensitive): `valid` (default value) or `same`. To specify that the
@@ -453,8 +453,8 @@ We use the @{tf.one_hot} function
 to perform this conversion. `tf.one_hot()` has two required arguments:
 
 *   `indices`. The locations in the one-hot tensor that will have "on
-    values"—i.e., the locations of `1` values in the tensor shown above.
-*   `depth`. The depth of the one-hot tensor—i.e., the number of target classes.
+    values"-i.e., the locations of `1` values in the tensor shown above.
+*   `depth`. The depth of the one-hot tensor-i.e., the number of target classes.
     Here, the depth is `10`.
 
 The following code creates the one-hot tensor for our labels, `onehot_labels`:
@@ -522,7 +522,7 @@ tf.argmax(input=logits, axis=1)
 ```
 
 The `input` argument specifies the tensor from which to extract maximum
-values—here `logits`. The `axis` argument specifies the axis of the `input`
+values-here `logits`. The `axis` argument specifies the axis of the `input`
 tensor along which to find the greatest value. Here, we want to find the largest
 value along the dimension with index of 1, which corresponds to our predictions
 (recall that our logits tensor has shape <code>[<em>batch_size</em>,
