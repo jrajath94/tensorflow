@@ -90,7 +90,7 @@ df_test[LABEL_COLUMN] = (df_test["income_bracket"].apply(lambda x: ">50K" in x))
 ```
 
 Next, let's take a look at the dataframe and see which columns we can use to
-predict the target label. The columns can be grouped into two types—categorical
+predict the target label. The columns can be grouped into two types-categorical
 and continuous columns:
 
 *   A column is called **categorical** if its value can only be one of the
@@ -441,7 +441,7 @@ $$ P(Y=1|\mathbf{x}) = \frac{1}{1+\exp(-(\mathbf{w}^T\mathbf{x}+b))}$$
 
 where \\(\mathbf{w}=[w_1, w_2, ..., w_d]\\) are the model weights for the features
 \\(\mathbf{x}=[x_1, x_2, ..., x_d]\\). \\(b\\) is a constant that is often called
-the **bias** of the model. The equation consists of two parts—A linear model and
+the **bias** of the model. The equation consists of two parts-A linear model and
 a logistic function:
 
 *   **Linear Model**: First, we can see that \\(\mathbf{w}^T\mathbf{x}+b = b +
