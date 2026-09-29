@@ -291,11 +291,11 @@ The `model_fn` must accept three arguments:
 *   `mode`: One of the following @{tf.contrib.learn.ModeKeys} string values
     indicating the context in which the model_fn was invoked:
     *   `tf.contrib.learn.ModeKeys.TRAIN` The `model_fn` was invoked in training
-        mode—e.g., via a `fit()` call.
+        mode-e.g., via a `fit()` call.
     *   `tf.contrib.learn.ModeKeys.EVAL`. The `model_fn` was invoked in
-        evaluation mode—e.g., via an `evaluate()` call.
+        evaluation mode-e.g., via an `evaluate()` call.
     *   `tf.contrib.learn.ModeKeys.INFER`. The `model_fn` was invoked in
-        inference mode—e.g., via a `predict()` call.
+        inference mode-e.g., via a `predict()` call.
 
 `model_fn` may also accept a `params` argument containing a dict of
 hyperparameters used for training (as shown in the skeleton above).
@@ -303,7 +303,7 @@ hyperparameters used for training (as shown in the skeleton above).
 The body of the function perfoms the following tasks (described in detail in the
 sections that follow):
 
-*   Configuring the model—here, for the abalone predictor, this will be a neural
+*   Configuring the model-here, for the abalone predictor, this will be a neural
     network.
 *   Defining the loss function used to calculate how closely the model's
     predictions match the target values.
@@ -386,7 +386,7 @@ As shown above, `input_from_feature_columns()` takes two required arguments:
 *   `columns_to_tensors`. A mapping of the model's `FeatureColumns` to the
     `Tensors` containing the corresponding feature data. This is exactly what is
     passed to the `model_fn` in the `features` argument.
-*   `feature_columns`. A list of all the `FeatureColumns` in the model—`age`,
+*   `feature_columns`. A list of all the `FeatureColumns` in the model-`age`,
     `height`, and `weight` in the above example.
 
 The input layer of the neural network then must be connected to one or more
