@@ -97,7 +97,7 @@ it or use the **PageUp** / **PageDown** / **Home** / **End** keys to navigate
 the screen output.
 
 As the screen output indicates, the first `run()` call calculates the accuracy
-using a test data set—i.e., a forward pass on the graph. You can enter the
+using a test data set-i.e., a forward pass on the graph. You can enter the
 command `run` (or its shorthand `r`) to launch the `run()` call. On terminals
 that support mouse events, you can simply click the underlined `run` on the top
 left corner of the screen to proceed.
@@ -119,15 +119,15 @@ Try the following commands at the `tfdbg>` prompt (referencing the code at
 |:----------------------------- |:----------------------------------- |
 | `pt hidden/Relu:0` | Print the value of the tensor `hidden/Relu:0`. |
 | `pt hidden/Relu:0[0:50,:]` | Print a subarray of the tensor `hidden/Relu:0`, using [numpy](http://www.numpy.org/)-style array slicing. |
-| `pt hidden/Relu:0[0:50,:] -a` | For a large tensor like the one here, print its value in its entirety—i.e., without using any ellipsis. May take a long time for large tensors. |
+| `pt hidden/Relu:0[0:50,:] -a` | For a large tensor like the one here, print its value in its entirety-i.e., without using any ellipsis. May take a long time for large tensors. |
 | `pt hidden/Relu:0[0:10,:] -a -r [1,inf]` | Use the `-r` flag to highlight elements falling into the specified numerical range. Multiple ranges can be used in conjunction, e.g., `-r [[-inf,-1],[1,inf]]`.|
 | `@[10,0]` or `@10,0` | Navigate to indices [10, 0] in the tensor being displayed. |
 | `/inf` | Search the screen output with the regex `inf` and highlight any matches. |
 | `/` | Scroll to the next line with matches to the searched regex (if any). |
 | `ni -a hidden/Relu` | Display information about the node `hidden/Relu`, including node attributes. |
 | `ni -t hidden/Relu` | Display the stack trace of node `hidden/Relu`'s construction. |
-| `li -r hidden/Relu:0` | List the inputs to the node `hidden/Relu`, recursively—i.e., the input tree. |
-| `lo -r hidden/Relu:0` | List the recipients of the output of the node `hidden/Relu`, recursively—i.e., the output recipient tree. |
+| `li -r hidden/Relu:0` | List the inputs to the node `hidden/Relu`, recursively-i.e., the input tree. |
+| `lo -r hidden/Relu:0` | List the recipients of the output of the node `hidden/Relu`, recursively-i.e., the output recipient tree. |
 | `lt -n softmax.*` | List all dumped tensors whose names match the regular-expression pattern `softmax.*`. |
 | `lt -t MatMul` | List all dumped tensors whose node type is `MatMul`. |
 | `ls` | List all Python source files responsible for constructing the nodes (and tensors) in the current graph. |
