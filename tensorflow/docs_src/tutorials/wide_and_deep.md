@@ -6,7 +6,7 @@ individual has an annual income of over 50,000 dollars using the
 [Census Income Dataset](https://archive.ics.uci.edu/ml/datasets/Census+Income).
 TensorFlow is
 great for training deep neural networks too, and you might be thinking which one
-you should choose—Well, why not both? Would it be possible to combine the
+you should choose-Well, why not both? Would it be possible to combine the
 strengths of both in one model?
 
 In this tutorial, we'll introduce how to use the TF.Learn API to jointly train a
