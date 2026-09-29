@@ -80,7 +80,7 @@ For [sparse, categorical data](https://en.wikipedia.org/wiki/Sparse_matrix)
   <dt><code>dense_shape</code></dt>
   <dd>The shape of the tensor. Takes a list indicating the number of elements in each dimension. For example, <code>dense_shape=[3,6]</code> specifies a two-dimensional 3x6 tensor, <code>dense_shape=[2,3,4]</code> specifies a three-dimensional 2x3x4 tensor, and <code>dense_shape=[9]</code> specifies a one-dimensional tensor with 9 elements.</dd>
   <dt><code>indices</code></dt>
-  <dd>The indices of the elements in your tensor that contain nonzero values. Takes a list of terms, where each term is itself a list containing the index of a nonzero element. (Elements are zero-indexed—i.e., [0,0] is the index value for the element in the first column of the first row in a two-dimensional tensor.) For example, <code>indices=[[1,3], [2,4]]</code> specifies that the elements with indexes of [1,3] and [2,4] have nonzero values.</dd>
+  <dd>The indices of the elements in your tensor that contain nonzero values. Takes a list of terms, where each term is itself a list containing the index of a nonzero element. (Elements are zero-indexed-i.e., [0,0] is the index value for the element in the first column of the first row in a two-dimensional tensor.) For example, <code>indices=[[1,3], [2,4]]</code> specifies that the elements with indexes of [1,3] and [2,4] have nonzero values.</dd>
   <dt><code>values</code></dt>
   <dd>A one-dimensional tensor of values. Term <code>i</code> in <code>values</code> corresponds to term <code>i</code> in <code>indices</code> and specifies its value. For example, given <code>indices=[[1,3], [2,4]]</code>, the parameter <code>values=[18, 3.6]</code> specifies that element [1,3] of the tensor has a value of 18, and element [2,4] of the tensor has a value of 3.6.</dd>
 </dl>
@@ -160,8 +160,8 @@ and pass it to the `input_fn` parameter:
 classifier.fit(input_fn=lambda: my_input_fn(training_set), steps=2000)
 ```
 
-One big advantage of architecting your input pipeline as shown above—to accept a
-parameter for data set—is that you can pass the same `input_fn` to `evaluate`
+One big advantage of architecting your input pipeline as shown above-to accept a
+parameter for data set-is that you can pass the same `input_fn` to `evaluate`
 and `predict` operations by just changing the data set argument, e.g.:
 
 ```python
